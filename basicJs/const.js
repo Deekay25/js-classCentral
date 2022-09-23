@@ -8,3 +8,4 @@ animal = "dog";
 console.log(dog);
 
 //above code will throw an error
+
