@@ -39,7 +39,7 @@ phoneticLookup("charlie");
 //solution
 // Setup
 function phoneticLookup(val) {
-  var result = "";
+  let result = "";
 
   // Only change code below this line
   const lookup = {
