@@ -1,18 +1,10 @@
-function phoneticLookup(val) {
-  var result = "";
+// Setup
+const myDog = {
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
 
-  // Only change code below this line
-  const lookup = {
-    "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie" : "Chicago",
-    "delta" : "Denver",
-    "echo" : "Easy",
-    "foxtrot" : "Frank"
-  }
-  result = lookup[val];
-  // Only change code above this line
-  return result;
-}
-
-console.log(phoneticLookup("charlie"));
+myDog.toes = 32;
+console.log(myDog);
