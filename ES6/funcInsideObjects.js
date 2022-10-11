@@ -22,9 +22,13 @@
 const bicycle = {
   gear: 2,
   setGear: function(newGear) {
+    console.log(gear)//returns gear not found
+    //this.gear refers to the bicycle itself
+    console.log(this)// returns the entire bicycle object
     this.gear = newGear;
   }
 };
 // Only change code above this line
+console.log(this)//returns undefined
 bicycle.setGear(3);
 console.log(bicycle.gear);
