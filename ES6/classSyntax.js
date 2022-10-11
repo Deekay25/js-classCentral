@@ -32,14 +32,18 @@
 // Only change code below this line
 class Vegetable {
   constructor(name) {
-    this.name = name;
+    //_name is  used to denote private variable by convention
+    //but it does not make a variable private
+    //private variables in this case should only be used inside the class by convention
+    //I used it wrongly here by using it after the class
+    this._name = name;
   }
 }
 // Only change code above this line
 
 //new vegetable means creates an instance of Vegetable
 const carrot = new Vegetable('carrot');//carrot here is an object of vegetable
-console.log(carrot.name); // Should display 'carrot'
+console.log(carrot._name); // Should display 'carrot'
 // Only change code above this line
 
 
