@@ -30,3 +30,4 @@ const makeServerRequest = new Promise((resolve, reject) => {
     reject("Data not received");
   }
 });
+//does nothing
