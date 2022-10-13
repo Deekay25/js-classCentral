@@ -1,4 +1,4 @@
-//Match Beginning String Patterns
+//Match from the Beginning String Patterns
 
 // a caret is used to achieve this
 //this means that check the string only at the beginning  if it matches then return it
