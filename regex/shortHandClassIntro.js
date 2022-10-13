@@ -5,7 +5,7 @@
 // \w is called shorthand character classes
 
 //[A-Za-z0-9_] === \w
-// \w is will eqaul all alphabets caps and samll and numbers
+// \w is will eqaul all alphabets caps and samll and numbers and underscore
 
 //very important below
 // /\w+/g returns words from a string 
