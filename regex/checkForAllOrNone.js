@@ -14,5 +14,5 @@
 // ? means that the character that follows before is optional
 
 let favWord = "favorite";
-let favRegex = /favou?rite/; // Change this line
+let favRegex = /favou?rite/; // u is optional
 let result = favRegex.test(favWord);
