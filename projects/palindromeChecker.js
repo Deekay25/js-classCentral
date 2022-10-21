@@ -103,9 +103,11 @@ console.log(palindrome("A man, a plan, a canal. Panama"));
 // *******************************
 function palindrome(str) {
   let result = "";
+  //looping through the string
   for (let i = str.length - 1; i >= 0; i--) {
     result = result + str[i];
   }
+  //cleaning the string and result to discard special characters 
   let newResult = result.replace(/[^a-z0-9]/gi, "");
   let newStr = str.replace(/[^a-z0-9]/gi, "");
   if (newStr.toLowerCase() !== newResult.toLowerCase()) {
@@ -115,3 +117,5 @@ function palindrome(str) {
 }
 
 palindrome("eye");
+
+//solve it by separating each task in a function
