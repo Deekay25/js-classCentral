@@ -119,3 +119,44 @@ function palindrome(str) {
 palindrome("eye");
 
 //solve it by separating each task in a function
+// Inspired by ramon with my additionals
+//turn string into uppper or lower
+function toUpper(str){
+  let upperString = str.toUpperCase();
+  return upperString;
+}
+console.log(toUpper("please make me big"))
+//clean the string 
+function cleanString(str){
+  let cleanStr = str.replace(/[^a-z0-9]/gi, '');
+  return cleanStr;
+}
+console.log(cleanString("return clean !!1 pleas"))
+//reverse the string
+function reverseString(str){
+  let result = "";
+  for (let i = str.length -1; i >= 0; i--){
+    // console.log(str)
+    result = result + str[i];
+    
+  }
+  return result;
+}
+
+console.log(reverseString("kimo"))
+//check for palindrome if true else false
+function palindrome(str2) {
+  let palUpper = toUpper(str2);
+  let palCleanStr = cleanString(palUpper);
+  let palReverseStr = reverseString(palCleanStr);
+  //usng if statement
+// if (palReverseStr !== palCleanStr){
+  //   return false
+  // }
+  // return true;
+  // the below can be used to replace the if statement
+return palReverseStr === palCleanStr;
+  
+}
+
+console.log(palindrome(""));
